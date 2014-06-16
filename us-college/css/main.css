@@ -80,7 +80,6 @@ html {
 
 /* -------------------- Question -------------------- */
 .question {
-
 }
 
 .question p {
@@ -100,7 +99,7 @@ html {
     margin: 20px 50px 5px 50px;
     border-bottom: 2px solid #FE642E;
     display: inline-block;
-
+    cursor: pointer;
 }
 
 .question li h5 {
@@ -118,10 +117,15 @@ html {
 .question td {
     padding: 10px;
     text-align: center;
+    line-height: 1.5;
 }
 
 .question a:link, .question a:visited {
     color: #FE642E;
+}
+
+.question .initially-hidden {
+    display: none;
 }
 
 /* -------------------- End Of Question -------------------- */

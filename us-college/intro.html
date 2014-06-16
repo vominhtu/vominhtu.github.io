@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=800px, initial-scale=1">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/helper-functions.js"></script>
 
         <title>A short guide to universities and colleges in the United States</title>
     </head>
@@ -54,10 +55,10 @@
             <div class="question" id="good-schools">
                 <h3>Which are good universities in the United States?</h3>
                 <p>In the United States, there are over 1800 four-year universities and colleges. If 8 out of over 120 universities in the United Kingdom are deemed "excellent," then there should be at least 100 excellent institutions in the United States. Click <a href="select.html">here</a> for some tips on selecting the "right" school. Some rankings of universities and colleges can be found <a href="select.html#univ-ranking">here</a>.</p>
-                <p>A list of <b>some</b> notable schools by category is also found below. Please note that this list is not in any way exhaustive.</p>
+                <p>A list of <b>some</b> notable schools by category is also found below. Please note that this list is not in any way exhaustive. Click on each category to view the corresponding list.</p>
                
-                <h4>Public Research Universities</h4>
-                    <ul>
+                <h4 onclick="toggleSchoolList('public-univ')">Public Research Universities</h4> <br>
+                    <ul class="initially-hidden" id='public-univ'>
                     <li>University of California - Berkeley</li>
                     <li>University of California - Los Angeles</li>
                     <li>Georgia Institute of Technology</li>
@@ -70,8 +71,8 @@
                     <li>University of Wisconsin - Madison</li>     
                     </ul>
                 
-                <h4>Private Research Universities</h4>
-                    <ul>
+                <h4 onclick="toggleSchoolList('private-univ')">Private Research Universities</h4> <br>
+                    <ul class="initially-hidden" id="private-univ">
                     <li>Carnegie-Mellon University</li>
                     <li>University of Chicago</li>
                     <li>Duke University</li>
@@ -84,7 +85,6 @@
                     <li>Stanford University</li>
                     <li>Vanderbilt University</li>  
                     <li>Washington University in St. Louis</li>
-
                     <li style="list-style-type:none;"><h5>The ‘Ivy-League’ Subcategory</h5></li>
                     <li>Brown University</li>
                     <li>Columbia University</li>
@@ -96,8 +96,8 @@
                     <li>Yale University</li>
                     </ul>
 
-                <h4>Private Liberal Arts Colleges</h4>
-                    <ul>
+                <h4 onclick="toggleSchoolList('lac')">Private Liberal Arts Colleges</h4> <br>
+                    <ul class="initially-hidden" id="lac">
                     <li>Amherst College</li>
                     <li>Kalamazoo College</li>
                     <li>Middlebury College</li>
@@ -107,8 +107,8 @@
                     <li>Williams College</li>
                     </ul>
         
-                <h4 id="engineering-colleges">Private Liberal Arts Colleges Offering Engineering and Engineering Colleges</h4>
-                    <ul>
+                <h4 id="engineering-colleges" onclick="toggleSchoolList('engineering')">Private Liberal Arts Colleges Offering Engineering and Engineering Colleges</h4>
+                    <ul class="initially-hidden" id="engineering">
                     <li>The Cooper Union for the Advancement of Science and Art</li>
                     <li>Franklin W. Olin College of Engineering</li>
                     <li>Harvey Mudd College</li>
@@ -120,13 +120,13 @@
                     <li>Union College</li>
                     </ul>
                 
-                <h4>Business Colleges</h4>
-                    <ul>
+                <h4 onclick="toggleSchoolList('business')">Business Colleges</h4> <br>
+                    <ul class="initially-hidden" id="business">
                     <li>Babson College</li>
                     </ul>
 
-                <h4>Military Institutions</h4>
-                    <ul>
+                <h4 onclick="toggleSchoolList('military')">Military Institutions</h4> <br>
+                    <ul class="initially-hidden" id="military">
                     <li>United States Air Force Academy</li>
                     <li>United States Coast Guard Academy</li>
                     <li>United States Military Academy (a.k.a. West Point)</li>
