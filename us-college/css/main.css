@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic);
+
 html {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', sans-serif;
     width: 800px;
     margin: auto;
     background-color: #EEEEEE;
